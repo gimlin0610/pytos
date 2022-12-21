@@ -301,7 +301,7 @@ class Secure_Track_Helper(Secure_API_Helper):
             logger.error(msg)
             raise ValueError(msg)
 
-    def new_generic_device(self, name: str, config_file: str,  domain_id=1, update_topo=True):
+    def new_generic_device(self, name: str, config_file: str,  domain_id=1, update_topo="True"):
         """
         It creates a new generic device on the specified domain.
 
@@ -330,7 +330,7 @@ class Secure_Track_Helper(Secure_API_Helper):
             logger.critical(message)
             raise ValueError(message)
 
-    def update_generic_device(self, device_id: int, config_file: str, update_topology=False):
+    def update_generic_device(self, device_id: int, config_file: str, update_topology="False"):
         """
         The update_generic_device function updates a generic device with the given configuration file.
 
